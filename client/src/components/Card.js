@@ -33,7 +33,7 @@ const Card = ({index,movieData,isLiked = false}) => {
     const addToList = async () => {
       console.log("clicked");
       try {
-        await axios.post("http://localhost:4500/api/users/add",{email,data : movieData})
+        await axios.post("https://netfilx-clone-914u.onrender.com/api/users/add",{email,data : movieData})
       } catch (error) {
         console.log(error);
       }
