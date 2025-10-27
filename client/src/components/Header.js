@@ -12,7 +12,7 @@ const Header = (props) => {
                 <img src={logo} alt="logo" />
             </Link>
         </div>
-        <button onClick={() => navigate(props.login ? "/login" : "/register")}>{props.login ? "Log In" : "sign In"}</button>
+        <button onClick={() => navigate(props.login ? "/login" : "/register")}>{props.login ? "Log In" : "SignUp"}</button>
     </Container>
   )
 }
